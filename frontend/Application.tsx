@@ -1,10 +1,10 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import { BlogPage } from './components/BlogPage';
+import './style.scss';
 
 function Application() {
-  return (
-    <div>Hello React from go</div>
-  )
+  return <BlogPage />;
 }
 
 const container = document.getElementById('application');
