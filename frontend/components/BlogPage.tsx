@@ -65,7 +65,7 @@ const SAMPLE_POSTS: Post[] = [
   },
 ];
 
-export const BlogPage: React.FC = () => {
+export const BlogPage: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigate }) => {
   const [currentPage, setCurrentPage] = useState<'home' | 'about' | 'archive'>('home');
   const [selectedPost, setSelectedPost] = useState<Post | null>(null);
   const [posts] = useState<Post[]>(SAMPLE_POSTS);

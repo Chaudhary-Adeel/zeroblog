@@ -26,6 +26,7 @@ export const BlogHeader: React.FC<BlogHeaderProps> = ({
             <li><a href="/" className="blog-header__nav-link" onClick={(e) => handleNavClick(e, 'home')}>Home</a></li>
             <li><a href="/about" className="blog-header__nav-link" onClick={(e) => handleNavClick(e, 'about')}>About</a></li>
             <li><a href="/archive" className="blog-header__nav-link" onClick={(e) => handleNavClick(e, 'archive')}>Archive</a></li>
+            <li><a href="/settings" className="blog-header__nav-link" onClick={(e) => handleNavClick(e, 'settings')}>Settings</a></li>
           </ul>
         </nav>
       </div>
